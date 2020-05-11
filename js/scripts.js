@@ -76,12 +76,57 @@ function DayName(dt,gender) {
 			name = female_names[day];
 		}
 		var gender_day = gender+'-'+days[day].toLowerCase();
-		var audio_output = jQuery('.custom-table').find('.'+gender_day).html();
 		console.log(gender_day);
     	return '<p>Your day name is <strong>'+name+'</strong>, which means you were born on a <strong>'+days[day]+'</strong>.</p><div><strong>Listen:</strong> '+audio_output+'</div>';
 	}
 	else {
 		return 'You did not select a proper date. Please try again.';	
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+	var ysel = document.getElementsByName("year")[0],
+    msel = document.getElementsByName("month")[0],
+    dsel = document.getElementsByName("day")[0];
+	for (var i = 2018; i >= 1900; i--) {
+		var opt = new Option();
+		opt.value = opt.text = i;
+		ysel.add(opt);
 	}
+	ysel.addEventListener("change", validate_date);
+	msel.addEventListener("change", validate_date);
+	setInitialDays();
+	jQuery("form.dayname-form").submit(function (event) {
+		var fulldate = jQuery(this).find("#month").val()+"/"+jQuery(this).find("#day").val()+"/"+jQuery(this).find("#year").val();
+		//var fulldate = dsel+"/"+msel+"/"+ysel;
+		console.log(fulldate);
+		
+		jQuery(".dayname span").html(DayName(fulldate,jQuery(this).find("#gender").val()));		
+		event.preventDefault();
+	});
+	
    
 }
