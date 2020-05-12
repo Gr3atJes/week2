@@ -1,60 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <title>Akan Name Generator</title>
+    <title>Akan names</title>
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="styles.css" rel="stylesheet"/>
 </head>
-
 <body>
-    <div class="container-fluid text-center">
+    <h1>AKAN NAME GENERATOR</h1>
+    <div class="container">
         <div class="jumbotron">
-            <h2> Akan Name Generator</h2>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-6">
-            <div class="card-title">
-                <h2>Akan Name Generator</h2>
+            <div class="row">
+                <div class="col-sm-6"></div>
+    <p>
+        This is a website that takes your birthday as a user
+        and calculates the day of the week you were born and 
+        in regards to your name gives you an <i>Akan Name</i>.
+        <b>Akan Names</b> are names derived from culture of 
+        <strong>GHANA</strong>.Children in the <b>Ghanian Culture
+        </b> are usually given their first name in correspondance 
+        to the <i>day of the week</i> they were born hence they are 
+        usually called <i>day names</i>.
+        Just fill the form below inorder to get your Akan name.<img src="https://bit.ly/2UPF2rC" class ="image" height="200px">
+    </p>
+    <img src="https://bit.ly/2vtdYnC" class="image " height="200px" width="500px">
             </div>
-            <div class="card-body text-justify">
-                <p>Akan Names are derived from Ghanaian culture. In Ghana, children are given their first name as a "day-name" which corresponds to the day in the week they were born.</p>
-                <p>This application enables you to find out the day of the week you were born and further suggests to you what your Akan Name would have been based on your gender and birthday.</p>
-            </div>
         </div>
-
-        <div class="col-md-6">
-
-            <h2>To find out your Akan Name, fill out this form</h2>
-
-            <form id="akanForm">
-                <label for="gender">Gender</label>
-                <div class="selectbox">
-                    <select id="gender" required>
-                      <option value="">Select Gender</option>
-                      <option value="female">Female</option>
-                      <option value="male">Male</option>
-                    </select>
-                </div>
-
-                <label for="Date">Date of Birth</label><br>
-                <input id="date" type="Date" required><br>
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-    </div>
-    <div id="reveal-result"></div>
-
-    <div class="footer">
-        Developed by RK Nyra &copy; 2019
-    </div>
-    </div>
-    <script src="js/script.js"></script>
+    <div class="col-sm-6"></div>
+    <form>
+        <label for="CC">CENTURY</label><br>
+        <input type="text" id="CC" name="CC"><br>
+        <label for="YY" id="YY">YEAR</label><br>
+        <input type="text" id="YY" name="YY"><br>
+        <label for="MM">MONTH(Enter the number of the month)</label><br>
+        <input type="text" id="MM" name="MM"><br>
+        <label for="DD">DAY</label><br>
+        <input type="text" x`id="DD" name="DD"><br>
+        <label for="fname">FIRSTNAME</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="Male">MALE</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="Female">FEMALE</label><br>
+        <input type="submit">
+    </form>    
+ </div>
 </body>
-
+<script src="js/scripts.js"></script>
 </html>
