@@ -3,7 +3,7 @@ Akan Name Generator-Where it processes your birth date and turns it into A Ghani
 # Project Description
 
 # Author Name
-
+Mathiu Jesse  2020
 # Project setup instructions
 
 # Link to Live Site on github pages
