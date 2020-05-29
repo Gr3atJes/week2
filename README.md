@@ -11,7 +11,7 @@ Then extract locally to available disk space
 Open the code using the IDE editor such as VSCode
 Open with the Browser you have locally
 # Link to Live Site on github pages
-This site was built using [GitHub Pages](https://pages.github.com/).
+This site was built using [GitHub Pages](https://gr3atjes.github.io/week2/).
 # Copyright and License Information
 Copyright 2020 Mathiu Jesse
 
